@@ -1,0 +1,108 @@
+{
+    "projects": [
+        {
+            "name": "Okuro",
+            "description": "Página web y aplicación móvil diseñada para utilizar un solo sistema para estudiantes de mi escuela secundaria, con sus clases en línea, clases en vivo y entrega de tareas. Ayudando a los estudiantes de mi comunidad a ahorrar nuestros recursos informáticos.",
+            "bullets": [
+                "Construí una página web con 3 personas, utilizando Node.js, MySQL, JavaScript y Bootstrap tanto en el backend como en el frontend, integrando API REST, comunicación en tiempo real y transmisión de video con la ayuda de características de Express.js para comunicación asíncrona como el protocolo WebSockets, etc.",
+                "Trabajé con Java para construir una aplicación Android con el mismo propósito que la página web, pero enfocándome en la portabilidad, migrando todas las funcionalidades de la página web a la aplicación móvil."
+            ],
+            "technologies": [
+                "JavaScript",
+                "Node.js",
+                "Bootstrap",
+                "Android Studio",
+                "MySQL"
+            ]
+        },
+
+        {
+            "name": "RemiCDMX",
+            "description": "Aplicación de escritorio para controlar a los inmigrantes alrededor de la Ciudad de México, capturando sus fotos y almacenando todos sus datos; les damos un boleto para una estancia excelente y controlada en la Ciudad de México.",
+            "bullets": [
+                "Construí una aplicación utilizando Java Swing y Programación Orientada a Objetos en Java.",
+                "Utilicé Ireport para la expedición de boletos y bibliotecas para usar el hardware de la cámara en Java."
+            ],
+            "technologies": [
+                "Java",
+                "Java Swing",
+                "IReport"
+            ]
+        },
+
+        {
+            "name": "Blogi",
+            "description": "Aplicación web para compartir mis proyectos y algunas noticias relevantes en el mundo.",
+            "bullets": [
+                "Construí una aplicación web con el Framework Django para utilizar todo el entorno y el diseño de patrón (Modelo-Vista-Plantilla) propuesto por Django.",
+                "Utilicé plantillas de Django ayudadas con HTML y CSS.",
+                "Utilicé el ORM de Django con MySQL para persistir la información."
+            ],
+            "technologies": [
+                "Python",
+                "Django",
+                "MySQL",
+                "Ajax"
+            ]
+        },
+        {
+            "name": "Canal 11",
+            "description": "Aplicación web para emular el horario y los detalles de programas del canal de televisión Canal 11.",
+            "bullets": [
+                "Construí una aplicación web utilizando Python y el framework Flask.",
+                "Utilicé plantillas de Flask ayudadas por HTML y Tailwind CSS para estilizar y estructurar el proyecto.",
+                "Utilicé una base de datos MySQL para persistir la información y PyMySQL para conectarme con Python."
+            ],
+            "technologies": [
+                "Python",
+                "Flask",
+                "MySQL"
+            ]
+        },
+        {
+            "name": "Asteroids",
+            "description": "Aplicación móvil para jugar al famoso juego Asteroids, moverse y disparar misiles para destruir todos los asteroides, ten cuidado, un asteroide entrante puede destruirte.",
+            "bullets": [
+                "Construí una aplicación móvil utilizando Java con Android Studio para desarrollar este juego para Android.",
+                "Utilicé XML y Material UI para diseñar los diseños y estilizar el proyecto.",
+                "Utilicé SQLite para persistir la posición del usuario y guardar las preferencias del usuario."
+            ],
+            "technologies": [
+                "Java",
+                "Android Studio",
+                "SQLite"
+            ]
+        },
+        {
+            "name": "My Places",
+            "description": "Aplicación móvil para guardar toda la información de tus lugares favoritos, esta aplicación te dirá si estás cerca de algún lugar.",
+            "bullets": [
+                "Construí una aplicación móvil utilizando Java con Android Studio y la API de Google Maps.",
+                "Utilicé XML y Material UI para diseñar los diseños y estilizar el proyecto.",
+                "Utilicé SQLite para persistir los lugares del usuario y la información respectiva.",
+                "Utilicé la API de Google Maps para verificar lugares cercanos."
+            ],
+            "technologies": [
+                "Java",
+                "Android Studio",
+                "Google Maps",
+                "SQLite"
+            ]
+        },
+        {
+            "name": "Peluqueria X-treme",
+            "description": "Una aplicación web que permite a los clientes seleccionar servicios y estilistas para hacer su cita en la peluquería. El administrador de la peluquería administrará estas citas.",
+            "bullets": [
+                "Construí una aplicación web utilizando JSP y servlets de Java.",
+                "Utilicé HTML, CSS, JavaScript y Ajax.",
+                "Utilicé MySQL en una base de datos relacional para manejar toda la lógica del negocio."
+            ],
+            "technologies": [
+                "Java",
+                "JavaScript",
+                "Ajax",
+                "MySQL"
+            ]
+        }
+    ]
+}

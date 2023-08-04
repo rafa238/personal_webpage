@@ -1,0 +1,11 @@
+{
+    "greeting": "Hello! I'm Rafael",
+    "description": "Computer Systems student with passion for programming, algorithms and machine learning. Competitive programming begginer. Continually exploring the world of technology and seeking opportunities to grow professionally in innovative projects. Welcome to my personal web page!",
+    "social_media": {
+        "github": "https://github.com/rafa238",
+        "linkedin": "https://www.linkedin.com/in/ju%C3%A1rez-laureano-rafael/"
+    },
+    "resume-check": "Check my resume",
+    "project-check": "Check the code",
+    "project-title": "Projects made with <3"
+}

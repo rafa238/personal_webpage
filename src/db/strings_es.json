@@ -1,0 +1,11 @@
+{
+    "greeting": "Hola! Soy Rafael",
+    "description": "Estudiante de Sistemas Computacionales con pasión por la programación, los algoritmos y el machine learning. Principiante en programación competitiva. Explorando continuamente el mundo de la tecnología y buscando oportunidades para crecer profesionalmente en proyectos innovadores. ¡Bienvenido a mi pagina web personal!",
+    "social_media": {
+        "github": "https://github.com/rafa238",
+        "linkedin": "https://www.linkedin.com/in/ju%C3%A1rez-laureano-rafael/"
+    },
+    "resume-check": "Checa mi curriculum",
+    "project-check": "Checa el código",
+    "project-title": "Proyectos hechos con <3"
+}

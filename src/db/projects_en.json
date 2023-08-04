@@ -1,0 +1,109 @@
+{
+    "projects" : [
+        {
+            "name" : "Okuro",
+            "description": "Web page and mobile app designed to use a single system for students in my high school, with their online classes, live classes, and task delivery,. Helping students in my community to save our computing resources.",
+            "bullets": [
+                "Built a web page with 3 people, using node.js, MySQL, Javascript, and bootstrap in both backend and frontend, integrating API REST, real-time communication, and video streaming with the help of expressJS features for asynchronous communication like WebSockets protocol etc.",
+                "Worked with Java to build an Android App for the same purpose as the web page but focusing on portability, migrating all functionalities from web page to mobile app"
+            ],
+            "technologies": [
+                "Javascript",
+                "NodeJS",
+                "Bootstrap",
+                "Android Studio",
+                "MySQL"
+            ]
+        },
+
+        {
+            "name" : "RemiCDMX",
+            "description": "Desktop application for taking control of immigrants around Mexico City, capturing their pictures, and storing all their data; we give them a ticket for a great and controlled stay in Mexico City.",
+            "bullets": [
+                "Built an application using Java Swing and Java Object-Oriented Programming.",
+                "Used of Ireport for the expedition of tickets and libraries to use camera hardware in Java."
+            ],
+            "technologies": [
+                "Java",
+                "Java Swing",
+                "IReport"
+            ]
+        },
+
+        {
+            "name" : "Blogi",
+            "description": "Web application to share my projects and some relevant news in the world.",
+            "bullets": [
+                "Build a web app with Django Framework in order to use all the enviroment and pattern design (Model-View-Template) proposed by Django",
+                "Used of django templates helped with html and css.",
+                "Used of django ORM with MySQL persist information."
+            ],
+            "technologies": [
+                "Python",
+                "Django",
+                "MySQL",
+                "Ajax"
+            ]
+        },
+        {
+            "name" : "Canal 11",
+            "description": "Web application to emulate the schedule and programs details from the Canal 11 TV channel.",
+            "bullets": [
+                "Build a web application using python and Flask framework.",
+                "Used of flask templates helped by html, and tailwind css to stilize and structure the project.",
+                "Used of MySQL database to persist information and PyMySQL to connect with Python."
+            ],
+            "technologies": [
+                "Python",
+                "Flask",
+                "MySQL"
+            ]
+        },
+        {
+            "name" : "Asteroids",
+            "description": "Mobile application to play the famous game Asteroids, move and shot missiles to destroy all the asteroids, be careful an incoming asteroid can destroy you.",
+            "bullets": [
+                "Build a mobile application using Java with Android Studio to develop this Android Game.",
+                "Used of XML and material UI to design layouts and stilize the project.",
+                "Used of sqlite to persist user putuation and save user preferences."
+            ],
+            "technologies": [
+                "Java",
+                "Android Studio",
+                "sqlite"
+            ]
+        },
+        {
+            "name" : "My Places",
+            "description": "Mobile Aplication to save all the information of your favorite places, this application will tell you if you are near of any place.",
+            "bullets": [
+                "Build a mobile application using Java with Android Studio and google maps api.",
+                "Used of XML and material UI to design layouts and stilize the project.",
+                "Used of sqlite to persist user places and the respective information.",
+                "Used of google maps api to check near places."
+            ],
+            "technologies": [
+                "Java",
+                "Android Studio",
+                "GoogleMaps",
+                "sqlite"
+            ]
+        },
+        {
+            "name" : "Peluqueria X-treme",
+            "description": "A web application that allows to clients select services and stylist to make their appointment at the hairdresser salon. Hairdresser admin will administrate these appointments.",
+            "bullets": [
+                "Build a web application using Java JSP's and servlets.",
+                "Used of HTML, CSS, JavaScript and Ajax.",
+                "Used of MySQL in a relational database to make all the business logical."
+            ],
+            "technologies": [
+                "Java",
+                "JavaScript",
+                "Ajax",
+                "MySQL"
+            ]
+        }
+    ]
+}
+
