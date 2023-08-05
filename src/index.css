@@ -1,36 +1,128 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-.main-nav{
-  margin-top: 10px;
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color1: #141e0d;
+  --color2: #0e5859;
+  --color6: #32a0a1;
+  --color7: #2d8a8b;
+  --color3: #ff6907;
+  --color4: #ffe558;
+  --color5: #fffbd7;
+}
+
+/* nav */
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--color2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6vh;
+  height: 7rem;
+}
+
+.nav__left {
+  display: inline-flex;
+}
+
+/* nav span */
+.nav-name {
+  display: inline-block;
+  color: white;
+  font-size: 3rem;
+}
+
+/* nav items */
+.main-nav {
   list-style: none;
-  padding-left: 0;
-  background-color: aqua;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .main-nav__item {
-  display: inline-block;
+  list-style: none;
+  margin-left: 2rem;
+  padding: 0.1rem;
 }
 
-.main-nav__item a{
-  color: white;
-  padding: 5px;
-  border-radius: 2px;
+.main-nav__item a {
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
   text-decoration: none;
+  color: var(--color5);
 }
 
-.main-nav__item a:hover{
-  color: blue;
+.main-nav__item a:hover {
+  color: var(--color4);
+  background-color: var(--color6);
 }
 
-.main-nav__item a:active{
-  color: red;
+.main-nav__item a:active {
+  color: var(--color5);
+  background-color: var(--color7);
+  transition: 0.1s;
 }
 
-.main-nav__item a::after{
-  content: "1";
+/* nav check */
+
+.nav__switchBtn {
+  position: relative;
+  display: inline-block;
+  width: 11.0rem;
+  height: 3.4rem;
 }
+
+.switchBtn input {
+  display: none;
+}
+
+.slide {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  padding: 0.8rem;
+  color: #fff;
+}
+
+.slide:before {
+  position: absolute;
+  content: "";
+  height: 2.6rem;
+  width: 2.6rem;
+  left: 7.8rem;
+  bottom: 0.4rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slide {
+  background-color: #8CE196;
+  padding-left: 4.0rem;
+}
+
+input:checked+.slide:before {
+  -webkit-transform: translateX(2.6rem);
+  -ms-transform: translateX(2.6rem);
+  transform: translateX(2.6rem);
+  left: -2.0rem;
+}
+
+/*Slides*/
