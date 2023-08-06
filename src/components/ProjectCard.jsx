@@ -7,7 +7,7 @@ export const ProjectCard = (project) => {
     const images = (project.images) ? project.images : "escom.jpg";
     const {name, description, bullets, technologies} = project;
     return (
-        <article className='projects__card shadow'>
+        <article className='projects__card'>
             <div className='card__header'>
                 <img src={ images } />
                 <h5 className='card__header-title'>{ name }</h5>
