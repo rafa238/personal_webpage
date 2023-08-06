@@ -3,15 +3,15 @@ import { ProjectCard } from './ProjectCard'
 import { DataContext } from '../context/DataProvider';
 
 export const ProjectsList = () => {
-  const { projects } = useContext(DataContext);
+  const { projects, projects_title} = useContext(DataContext);
   return (
-    <>
-      <h2>Projects maded with love: </h2>
+    <section className='projects'>
+      <h2 className='projects-title'>{ projects_title }</h2>
       {
         projects.map( project => (
           <ProjectCard key={project.name} {...project}/>
         ))
       }
-    </>
+    </section>
   )
 }

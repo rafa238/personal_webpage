@@ -17,16 +17,15 @@ export const Navbar = () => {
             <a href='#' > About </a>
           </li>
           <li className='main-nav__item'>
-            <a href='#' > My projects </a>
+            <a href='#'>Projects</a>
           </li>
         </ul>
       </div>
-      <label class="nav__switchBtn">
+      <label >
         <input 
           type='checkbox' 
           checked={language}
           onChange={() => setLanguage(!language)}/>
-          <div class="slide round">spanish</div>
       </label>
       
     </nav>

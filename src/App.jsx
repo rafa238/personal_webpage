@@ -4,16 +4,18 @@ import { Introduction } from './components/Introduction'
 import { Navbar } from './components/Navbar'
 import { ProjectsList } from './components/ProjectsList'
 import { DataProvider } from './context/DataProvider'
-import "./index.css";
+import './index.css';
 
 function App() {
   return (
     <DataProvider>
-      <Navbar/>
-      <Introduction/>
-      {/*<About/>*/}
-      <ProjectsList/>
-      <Contact/>
+      <main className='container'>
+        <Navbar/>
+        <Introduction/>
+        {/*<About/>*/}
+        <ProjectsList/>
+        <Contact/>
+      </main>
     </DataProvider>
   )
 }
