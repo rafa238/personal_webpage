@@ -22,10 +22,10 @@ export const Navbar = () => {
         </ul>
       </div>
       <label >
-        <input 
-          type='checkbox' 
-          checked={language}
-          onChange={() => setLanguage(!language)}/>
+      <input 
+        type='checkbox' 
+        checked={language}
+        onChange={() => setLanguage(!language)}/>
       </label>
       
     </nav>

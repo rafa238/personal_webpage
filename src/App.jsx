@@ -1,5 +1,6 @@
 import { About } from './components/About'
 import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
 import { Introduction } from './components/Introduction'
 import { Navbar } from './components/Navbar'
 import { ProjectsList } from './components/ProjectsList'
@@ -15,6 +16,7 @@ function App() {
         {/*<About/>*/}
         <ProjectsList/>
         <Contact/>
+        <Footer/>
       </main>
     </DataProvider>
   )

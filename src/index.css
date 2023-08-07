@@ -282,7 +282,7 @@ html {
 
 .contact__info-item{
   font-size: 1.2rem;
-  margin: 1rem 0.5rem;
+  margin: 1.5rem 0.5rem;
 }
 
 .contact__info-item a{
@@ -323,15 +323,39 @@ textarea,
 .contact__form__group input[type="email"]{
   font-size: 1.6rem;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0.17rem solid rgba(170, 168, 168, 0.5);
   padding: 0;
   height: 3.6rem;
   background: var(--color3);
   width: 100%;
 }
 
-textarea,
+textarea:hover,
 .contact__form__group input[type="text"]:hover,
 .contact__form__group input[type="email"]:hover{
-  border-bottom: 1px solid var(--color7);
+  border-bottom: 0.17rem solid var(--color2);
+  transition: 0.5s;
+}
+
+.footer{
+  background-color: var(--color2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+  width: 100%;
+  color: var(--text-light);
+}
+
+.footer__social{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer__social img{
+  width: 4rem;
+  height: 4rem;
+  filter: invert(1);
+  margin: 0 1rem;
 }
