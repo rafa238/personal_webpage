@@ -173,6 +173,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.5s ease;
+  width: 30rem;
 }
 
 .projects__card:hover{
@@ -180,17 +182,9 @@ html {
   transition: 0.5s;
 }
 
-.projects__card:hover{
-  border: 0.1rem solid var(--color5);
-  border-top: 0;
-  border-radius: 1rem;
-  margin: 2rem;
-}
-
-
 .card__header img{
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
+  height: 25rem;
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -202,7 +196,7 @@ html {
 .card__content{
   padding: 1.3rem;
   padding-top: 0.2rem;
-  width: 30rem;
+  width: 100%;
 }
 
 .card__content h5{
@@ -212,10 +206,12 @@ html {
 
 .card__content-description{
   padding: 0;
+  text-align: justify;
 }
 
 .card__content-bullets{
   padding: 1rem;
+  text-align: justify;
 }
 
 .card__content__tech{
@@ -233,7 +229,6 @@ html {
 }
 
 .card__footer{
-
   padding: 2rem 1rem;
   text-align: center;
   border-top: 0.1rem solid var(--color5);

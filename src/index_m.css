@@ -1,0 +1,120 @@
+@media (min-width:600px){
+    .nav-name{
+        font-size: 2.2rem;
+    }
+    .main-nav{
+        font-size: 1.5rem;
+    }
+    /* helpers*/
+    .btn-blue{
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    /*presentation*/
+    .presen{
+        padding-bottom: 2.5rem;
+    }
+    
+    .presen__pictures img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .presen__main-greeting{
+        font-size: 2.7rem;
+    }
+
+    .presen__main-description{
+        font-size: 1.7rem;
+        line-height: 1.7;
+    }
+
+    /*projects section*/
+    .projects{
+        padding: 1.5rem;
+    }
+
+    .projects__card{
+        margin: 0.5rem;
+        width: 40rem;
+    }
+
+    .projects-title{
+        font-size: 2rem;
+        font-size: 2.5rem;    
+    }
+
+    /*card*/
+    .card__header-title{
+        font-size: 2rem;
+        padding: 0.5rem 1.2rem;
+    }
+    
+    .card__content{
+        padding-top: 0.6rem;
+    }
+
+    .card__content h5{
+        font-size: 1.5rem;
+    }
+
+    .card__content-description{
+        font-size: 1.5rem;
+    }
+
+    .card__content-bullets{
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .card__content-bullets li{
+        padding: 1rem;
+    }
+
+    .card__content__tech-item{
+        padding: 0.8rem 1.5rem;
+        margin: 0.7rem;
+        font-size: 1.3rem;
+    }
+
+    .card__footer{
+        font-size: 1.8rem;
+    }
+
+    /*contact form*/
+    .contact h5{
+        font-size: 2rem;
+    }
+
+    .contact__container{
+        flex-direction: row;
+    }
+
+    .contact__info{
+        width: 50%;
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .contact__info-item{
+        font-size: 1.7rem;
+    }
+
+    .contact__form{
+        width: 50%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+
+    .contact__form__group label{
+        font-size: 1.6rem;
+    }
+
+    /*footer*/
+    .footer-author{
+        font-size: 1.4rem;
+    }
+}

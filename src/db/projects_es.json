@@ -4,7 +4,7 @@
             "name": "Okuro",
             "description": "Página web y aplicación móvil diseñada para utilizar un solo sistema para estudiantes de mi escuela secundaria, con sus clases en línea, clases en vivo y entrega de tareas. Ayudando a los estudiantes de mi comunidad a ahorrar nuestros recursos informáticos.",
             "bullets": [
-                "Construí una página web con 3 personas, utilizando Node.js, MySQL, JavaScript y Bootstrap tanto en el backend como en el frontend, integrando API REST, comunicación en tiempo real y transmisión de video con la ayuda de características de Express.js para comunicación asíncrona como el protocolo WebSockets, etc.",
+                "Construí una página web, utilizando Node.js, MySQL, JavaScript y Bootstrap tanto en el backend como en el frontend, integrando API REST, comunicación en tiempo real y transmisión de video con la ayuda de Express.js etc.",
                 "Trabajé con Java para construir una aplicación Android con el mismo propósito que la página web, pero enfocándome en la portabilidad, migrando todas las funcionalidades de la página web a la aplicación móvil."
             ],
             "technologies": [

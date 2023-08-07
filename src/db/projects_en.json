@@ -4,7 +4,7 @@
             "name" : "Okuro",
             "description": "Web page and mobile app designed to use a single system for students in my high school, with their online classes, live classes, and task delivery,. Helping students in my community to save our computing resources.",
             "bullets": [
-                "Built a web page with 3 people, using node.js, MySQL, Javascript, and bootstrap in both backend and frontend, integrating API REST, real-time communication, and video streaming with the help of expressJS features for asynchronous communication like WebSockets protocol etc.",
+                "Built a web page using node.js, MySQL, Javascript, and bootstrap in both backend and frontend, integrating API REST, real-time communication, and video streaming with the help of expressJS etc.",
                 "Worked with Java to build an Android App for the same purpose as the web page but focusing on portability, migrating all functionalities from web page to mobile app"
             ],
             "technologies": [

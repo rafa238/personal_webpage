@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar'
 import { ProjectsList } from './components/ProjectsList'
 import { DataProvider } from './context/DataProvider'
 import './index.css';
+import './index_m.css';
 
 function App() {
   return (
