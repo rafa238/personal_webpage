@@ -31,7 +31,7 @@ export const Introduction = () => {
 
       <a
         href='https://drive.google.com/file/d/1kVvRcr4bNo7RjBhS2LVNTquH23Y3tGNA/view'
-        className='presen_resume shadow'
+        className='btn-blue shadow'
         target='__blank'
       >
         {resume_check}
