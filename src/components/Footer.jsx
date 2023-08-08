@@ -19,6 +19,12 @@ export const Footer = () => {
                   src='assets/linkedin.png' 
                   alt='Rafael linkedin'/>
             </a>
+            <a href="#contact">
+              <img 
+                className='light'
+                src='assets/mensaje.png' 
+                alt='Rafael email'/>
+            </a>
         </div>
     </div>
   )

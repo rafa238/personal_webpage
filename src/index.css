@@ -74,6 +74,12 @@ html {
   display: inline-flex;
 }
 
+.nav__right-language{
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
 /* nav span */
 .nav-name {
   display: inline-block;

@@ -4,21 +4,21 @@ export const Form = () => {
     return (
         <form action='#'>
             <div className='contact__form__group'>
-                <label for="name">Full Name</label>
+                <label htmlFor="name">Full Name</label>
                 <input
                     type='text'
                     id="name"
                     placeholder='Name' />
             </div>
             <div className='contact__form__group'>
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                     type='text'
                     id="email"
                     placeholder='Email' />
             </div>
             <div className='contact__form__group'>
-                <label for="subject">Subject</label>
+                <label htmlFor="subject">Subject</label>
                 <input
                     type='text'
                     id="subject"
@@ -26,7 +26,7 @@ export const Form = () => {
                 
             </div>
             <div className='contact__form__group'>
-                <label for="content">Content</label>
+                <label htmlFor="content">Content</label>
                 <textarea
                     id='content'
                     placeholder='Message'>

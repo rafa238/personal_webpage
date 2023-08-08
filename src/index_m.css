@@ -94,6 +94,9 @@
     }
 
     .contact__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 50%;
         border-top-right-radius: 0rem;
         border-bottom-left-radius: 1rem;
@@ -104,6 +107,9 @@
     }
 
     .contact__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 50%;
         border-bottom-left-radius: 0;
         border-top-right-radius: 1rem;

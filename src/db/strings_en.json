@@ -1,11 +1,25 @@
 {
-    "greeting": "Hello! I'm Rafael",
-    "description": "Computer Systems student with passion for programming, algorithms and machine learning. Competitive programming begginer. Continually exploring the world of technology and seeking opportunities to grow professionally in innovative projects. Welcome to my personal web page!",
+    "greeting": "Hello! I'm Rafael.",
+    "description": "Computer Systems student with a passion for programming, algorithms, and machine learning. Beginner in competitive programming. Continually exploring the world of technology and seeking opportunities to grow professionally in innovative projects. Welcome to my personal webpage!",
     "social_media": {
         "github": "https://github.com/rafa238",
         "linkedin": "https://www.linkedin.com/in/ju%C3%A1rez-laureano-rafael/"
     },
-    "resume_check": "Check my resume",
+    "resume_check": "Check out my resume",
     "project_check": "Check the code",
-    "projects_title": "Projects made with ❤️"
+    "projects_title": "Projects made with ❤️",
+    "actions": {
+        "contact": "Contact",
+        "projects": "Projects",
+        "home": "Home"
+    },
+    "contact":{
+        "contact_me": "Let's stay in touch!",
+        "send_me": "Email me directly",
+        "email": "Email",
+        "phone": "Phone",
+        "name": "Name",
+        "subject": "Subject",
+        "content": "Content"
+    }
 }

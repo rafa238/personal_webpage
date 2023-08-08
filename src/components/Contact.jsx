@@ -5,22 +5,23 @@ import { AiOutlinePhone, AiOutlineMail, AiOutlineLinkedin} from 'react-icons/ai'
 import { BsGithub} from 'react-icons/bs';
 
 export const Contact = () => {
-  const {social_media} = useContext(DataContext);
+  const {social_media, contact} = useContext(DataContext);
+  const {contact_me, send_me, email, phone} = contact;
   return (
-    <div className='contact'>
+    <div className='contact' id="contact">
       <div className='contact__container shadow'>
         <div className='contact__info'>
-          <h5>¡Mantengamonos en contacto!</h5>
+          <h5>{ contact_me }</h5>
 
           <p className='contact__info-item'>
             <AiOutlineMail/>
-            <strong> Correo Electronico:</strong> <br/> 
+            <strong> { email }:</strong> <br/> 
             rafalaureano642@gmail.com
           </p>
 
           <p className='contact__info-item'>
             <AiOutlinePhone/>
-            <strong> Telefono:</strong> <br/> 
+            <strong> { phone }:</strong> <br/> 
             (+52) 55 8727 7559
           </p>
 
@@ -37,9 +38,7 @@ export const Contact = () => {
           </p>
         </div>
         <div className='contact__form'>
-          <h5>
-            Envia un correo aqui mismo
-          </h5>
+          <h5> { send_me } </h5>
           <Form />
         </div>
       </div>

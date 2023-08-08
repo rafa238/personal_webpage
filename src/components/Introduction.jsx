@@ -35,6 +35,9 @@ export const Introduction = () => {
         <a href={ social_media["linkedin"] } target='__blank'>
             <img src='assets/linkedin.png' alt='Rafael linkedin'/>
         </a>
+        <a href="#contact">
+            <img src='assets/mensaje.png' alt='Rafael email'/>
+        </a>
       </div>
       <a
         href='https://drive.google.com/file/d/1kVvRcr4bNo7RjBhS2LVNTquH23Y3tGNA/view'

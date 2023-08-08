@@ -7,6 +7,7 @@ import { ProjectsList } from './components/ProjectsList'
 import { DataProvider } from './context/DataProvider'
 import './index.css';
 import './index_m.css';
+import './index_l.css';
 
 function App() {
   return (

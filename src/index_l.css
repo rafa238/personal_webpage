@@ -1,0 +1,84 @@
+@media (min-width:800px){
+
+    .btn-blue{
+        font-size: 1.7rem;
+        padding: 1.3rem 1.8rem;
+    }
+
+    .nav{
+        justify-content: space-between;
+        padding: 0 5vw;
+    }
+    .nav-name{
+        margin-right: 2rem;
+        font-size: 2.5rem;
+    }
+    .main-nav{
+        font-size: 1.8rem;
+    }
+    /*Presentation*/
+    .presen{
+        padding: 6rem;
+    }
+    .presen__pictures img{
+        width: 31rem;
+        height: 31rem;
+    }
+    .presen__main-greeting{
+        font-size: 3rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .presen__main-description{
+        font-size: 2rem;
+        line-height: 1.7;
+    }
+
+    /*projects*/
+    .projects-title{
+        margin-bottom: 2rem; 
+    }
+
+    /*card*/
+    .projects__card{
+
+        margin: 3rem 0.7rem;
+        margin-top: 0;
+    }
+
+    .card__header-title{
+        font-size: 2.3rem;
+        padding: 0.8rem 1.4rem;
+    }
+    .card__content{
+        padding-top: 0.6rem;
+    }
+
+    .card__content-description{
+        line-height: 2.3rem;
+    }
+    .card__content-bullets{
+        padding: 1.3rem;
+        line-height: 2.3rem;
+    }
+    .card__footer{
+        font-size: 2rem;
+    }
+
+    /*contact form*/
+    .contact h5{
+        padding: 2rem;
+    }
+
+    /*footer*/
+    .footer-author{
+        font-size: 1.4rem;
+    }
+
+    textarea,
+    .contact__form__group input[type="text"],
+    .contact__form__group input[type="email"]{
+        margin-bottom: 1rem;
+    }
+
+}
