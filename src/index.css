@@ -33,6 +33,15 @@ html {
   box-shadow: 2px 4px 22px 0px rgba(0,0,0,0.75);
 }
 
+
+.light{
+  filter: invert(1);
+}
+
+.black{
+  filter: invert(0);
+}
+
 /*Resume Button*/
 
 .btn-blue{
@@ -45,6 +54,7 @@ html {
   font-weight: 500;
   text-decoration: none;
   border: none;
+  display: inline-block;
 }
 
 
@@ -141,7 +151,6 @@ html {
 .presen__main-description{
   font-size: 1.2rem;
   margin: 0.5rem 1rem;
-  margin-bottom:2rem;
   line-height: 2rem;
   margin-right: 0;
 }
@@ -342,15 +351,14 @@ textarea:hover,
   color: var(--text-light);
 }
 
-.footer__social{
+.social__container{
   display: flex;
   flex-direction: row;
-
+  padding: 1rem 0;
 }
 
-.footer__social img{
+.social__container img{
   width: 4rem;
   height: 4rem;
-  filter: invert(1);
   margin: 0 1rem;
 }
