@@ -1,38 +1,103 @@
-import React from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const initialStateForm = {
+    name: "",
+    email: "",
+    subject_1: "",
+    content: ""
+};
 
 export const Form = () => {
+    const [formState, setFormState] = useState(initialStateForm);
+    const { name, email, subject, content } = formState;
+
+    const [serverState, setServerState] = useState({
+        submitting: false,
+        status: null
+    });
+
+    const handleServerResponse = (ok, msg) => {
+        setServerState({
+            submitting: false,
+            status: { ok, msg }
+        });
+        if (ok) {
+            setFormState(initialStateForm);
+        }
+    };
+    
+    const onInputChange = ({ target }) => {
+        const { name, value } = target;
+        setFormState({
+            ...formState,
+            [name]: value
+        });
+    }
+
+    const handleOnSubmit = event => {
+        event.preventDefault();
+        setServerState({ submitting: true });
+        axios({
+            method: "POST",
+            url: "https://formspree.io/f/mnqkpqrp",
+            data: formState
+        })
+            .then(r => {
+                handleServerResponse(true, "Thanks!");
+            })
+            .catch(r => {
+                console.log(r)
+                handleServerResponse(false, r.response.data.error);
+            });
+    };
+
     return (
-        <form action='#'>
+        <form onSubmit={ handleOnSubmit }>
             <div className='contact__form__group'>
-                <label htmlFor="name">Full Name</label>
+                <label htmlFor='name'>Full Name</label>
                 <input
                     type='text'
-                    id="name"
-                    placeholder='Name' />
+                    id='name'
+                    name='name'
+                    value={name}
+                    onChange={onInputChange}
+                    placeholder='Name'
+                />
             </div>
             <div className='contact__form__group'>
-                <label htmlFor="email">Email</label>
+                <label htmlFor='email'>Email</label>
+                <input
+                    type='email'
+                    id='email'
+                    name='email'
+                    value={email}
+                    onChange={onInputChange}
+                    placeholder='Email'
+                />
+            </div>
+            <div className='contact__form__group'>
+                <label htmlFor='subject'>Subject</label>
                 <input
                     type='text'
-                    id="email"
-                    placeholder='Email' />
+                    id='subject_1'
+                    name='subject_1'
+                    value={subject}
+                    onChange={onInputChange}
+                    placeholder='Subject'
+                />
             </div>
             <div className='contact__form__group'>
-                <label htmlFor="subject">Subject</label>
-                <input
-                    type='text'
-                    id="subject"
-                    placeholder='Subject' />
-                
-            </div>
-            <div className='contact__form__group'>
-                <label htmlFor="content">Content</label>
+                <label htmlFor='content'>Content</label>
                 <textarea
                     id='content'
-                    placeholder='Message'>
-                </textarea>
+                    name='content'
+                    value={content}
+                    onChange={onInputChange}
+                    placeholder='Message'
+                />
             </div>
-            <input type='submit' className='btn-blue shadow'/>
+            <input type='submit' value="send" className='btn-blue shadow'/>
         </form>
-    )
-}
+    );
+};
