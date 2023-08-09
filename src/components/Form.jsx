@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
+import { DataContext } from '../context/DataProvider';
 
 const initialStateForm = {
     name: "",
@@ -9,6 +10,7 @@ const initialStateForm = {
 };
 
 export const Form = () => {
+    const { contact } = useContext(DataContext);
     const [formState, setFormState] = useState(initialStateForm);
     const { name, email, subject, content } = formState;
 
@@ -55,7 +57,7 @@ export const Form = () => {
     return (
         <form onSubmit={ handleOnSubmit }>
             <div className='contact__form__group'>
-                <label htmlFor='name'>Full Name</label>
+                <label htmlFor='name'>{ contact.name }:</label>
                 <input
                     type='text'
                     id='name'
@@ -66,7 +68,7 @@ export const Form = () => {
                 />
             </div>
             <div className='contact__form__group'>
-                <label htmlFor='email'>Email</label>
+                <label htmlFor='email'>{ contact.email }:</label>
                 <input
                     type='email'
                     id='email'
@@ -77,7 +79,7 @@ export const Form = () => {
                 />
             </div>
             <div className='contact__form__group'>
-                <label htmlFor='subject'>Subject</label>
+                <label htmlFor='subject'>{ contact.subject }:</label>
                 <input
                     type='text'
                     id='subject_1'
@@ -88,7 +90,7 @@ export const Form = () => {
                 />
             </div>
             <div className='contact__form__group'>
-                <label htmlFor='content'>Content</label>
+                <label htmlFor='content'>{ contact.content }:</label>
                 <textarea
                     id='content'
                     name='content'
