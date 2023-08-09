@@ -5,12 +5,12 @@ import { DataContext } from '../context/DataProvider';
 const initialStateForm = {
     name: "",
     email: "",
-    subject_1: "",
+    subject: "",
     content: ""
 };
 
 export const Form = () => {
-    const { contact } = useContext(DataContext);
+    const { contact, form_success } = useContext(DataContext);
     const [formState, setFormState] = useState(initialStateForm);
     const { name, email, subject, content } = formState;
 
@@ -25,6 +25,7 @@ export const Form = () => {
             status: { ok, msg }
         });
         if (ok) {
+            alert(form_success)
             setFormState(initialStateForm);
         }
     };
@@ -82,8 +83,8 @@ export const Form = () => {
                 <label htmlFor='subject'>{ contact.subject }:</label>
                 <input
                     type='text'
-                    id='subject_1'
-                    name='subject_1'
+                    id='subject'
+                    name='subject'
                     value={subject}
                     onChange={onInputChange}
                     placeholder='Subject'

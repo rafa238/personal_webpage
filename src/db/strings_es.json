@@ -21,5 +21,6 @@
         "name": "Nombre",
         "subject": "Motivo",
         "content": "Contenido"
-    }
+    },
+    "form_success": "¡Message enviado con éxito!"
 }

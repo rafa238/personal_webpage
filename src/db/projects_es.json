@@ -14,7 +14,7 @@
                 "Android Studio",
                 "MySQL"
             ],
-            "images": "escom.jpg"
+            "images": "projects/okuro.png"
         },
 
         {
@@ -28,7 +28,8 @@
                 "Java",
                 "Java Swing",
                 "IReport"
-            ]
+            ],
+            "images": "projects/REMICDMX.png"
         },
 
         {
@@ -44,7 +45,8 @@
                 "Django",
                 "MySQL",
                 "Ajax"
-            ]
+            ],
+            "images": "projects/blogi.png"
         },
         {
             "name": "Canal 11",
@@ -58,7 +60,8 @@
                 "Python",
                 "Flask",
                 "MySQL"
-            ]
+            ],
+            "images": "projects/canal11.png"
         },
         {
             "name": "Asteroids",
@@ -72,7 +75,8 @@
                 "Java",
                 "Android Studio",
                 "SQLite"
-            ]
+            ],
+            "images": "projects/asteroids.png"
         },
         {
             "name": "My Places",
@@ -88,7 +92,8 @@
                 "Android Studio",
                 "Google Maps",
                 "SQLite"
-            ]
+            ],
+            "images": "projects/my_places.png"
         },
         {
             "name": "Peluqueria X-treme",
@@ -103,7 +108,8 @@
                 "JavaScript",
                 "Ajax",
                 "MySQL"
-            ]
+            ],
+            "images": "projects/peluqueria_Xtreme.png"
         }
     ]
 }
