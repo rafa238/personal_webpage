@@ -8,7 +8,12 @@ export const Contact = () => {
   const {social_media, contact} = useContext(DataContext);
   const {contact_me, send_me, email, phone} = contact;
   return (
-    <div className='contact' id="contact">
+    <div 
+      className='contact' 
+      id="contact"
+      data-aos="fade-bottom"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="2000">
       <div className='contact__container shadow'>
         <div className='contact__info'>
           <h5>{ contact_me }</h5>

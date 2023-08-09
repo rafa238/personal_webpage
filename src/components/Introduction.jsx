@@ -1,34 +1,61 @@
-import React, { Children, useContext, useEffect, useState } from 'react'
+import React, { Children, useContext, useEffect, useRef, useState } from 'react'
 import { DataContext } from '../context/DataProvider'
+import Typed from 'typed.js'
 
 const images = ["mi_foto_cubre.jpg", "mi_foto.jpg"]
 let idx = 0;
 
 export const Introduction = () => {
-  const { greeting, description, resume_check, social_media} = useContext(DataContext);
+  const { greeting, description, resume_check, social_media, adjectives} = useContext(DataContext);
   const [imgIdx, setImgIdx] = useState(idx);
+  const adjs = useRef(null);
 
   useEffect(() => {
+    //change image
     const intervalId = setInterval(function(){
       setImgIdx((idx++) % images.length);
     }, 4000);
-  
+
+    //typed efect
+    const typed = new Typed(adjs.current, {
+      strings: adjectives,
+      typeSpeed: 200,
+      backSpeed: 100,
+      onComplete: (self) => {
+        //wait one second and reset
+        setTimeout(() => {
+          self.reset();
+        }, 1000);
+      }
+    });
+
     return () => {
+      //interval image
       clearInterval(intervalId);
+      //interval typing
+      typed.destroy();
     }
-  }, []);
+  }, [adjectives]);
   
 
   return (
     <section className='presen'>
       <figcaption className='presen__pictures'>
-        <img src={ images[imgIdx] } alt='Rafael Juarez Laureano fotografia'/>
+        <img
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          src={ images[imgIdx] } 
+          alt='Rafael Juarez Laureano fotografia'/>
       </figcaption>
       <div className='presen__main'>
-        <h1 className='presen__main-greeting'>{ greeting }</h1>
+        <h1 className='presen__main-greeting'>
+          { greeting } <span ref={ adjs }></span>
+        </h1>
         <p className='presen__main-description'>{ description }</p>
       </div>
-      <div className='social__container'>
+      <div className='social__container'
+        data-aos="fade-right"
+        data-aos-duration="3000">
         <a href={ social_media["github"] } target='__blank'>
             <img src='assets/github.png' alt='Rafael github'/>
         </a>

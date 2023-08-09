@@ -1,5 +1,5 @@
 {
-    "greeting": "¡Hola! Soy Rafael.",
+    "greeting": "¡Hola! Soy ",
     "description": "Estudiante de Sistemas Computacionales con pasión por la programación, los algoritmos y el machine learning. Principiante en programación competitiva. Explorando continuamente el mundo de la tecnología y buscando oportunidades para crecer profesionalmente en proyectos innovadores.\n ¡Bienvenido a mi página web personal!",
     "social_media": {
         "github": "https://github.com/rafa238",
@@ -22,5 +22,6 @@
         "subject": "Motivo",
         "content": "Contenido"
     },
-    "form_success": "¡Message enviado con éxito!"
+    "form_success": "¡Message enviado con éxito!",
+    "adjectives": ["Rafael.", "estudiante de Ingeniería.", "programador.", "gamer."]
 }

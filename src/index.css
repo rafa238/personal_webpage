@@ -69,6 +69,7 @@ html {
   align-items: center;
   height: 7rem;
   width: 100%;
+  z-index: 1;
 }
 
 .nav__left {
@@ -368,4 +369,9 @@ textarea:hover,
   width: 4rem;
   height: 4rem;
   margin: 0 1rem;
+  transition: transform 0.6s;
+}
+
+.social__container img:hover {
+  transform: rotate(360deg);
 }

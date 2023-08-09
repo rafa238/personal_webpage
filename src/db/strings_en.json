@@ -1,5 +1,5 @@
 {
-    "greeting": "Hello! I'm Rafael.",
+    "greeting": "Hello! I'm ",
     "description": "Computer Systems student with a passion for programming, algorithms, and machine learning. Beginner in competitive programming. Continually exploring the world of technology and seeking opportunities to grow professionally in innovative projects. Welcome to my personal webpage!",
     "social_media": {
         "github": "https://github.com/rafa238",
@@ -22,5 +22,6 @@
         "subject": "Subject",
         "content": "Content"
     },
-    "form_success": "Message sent successfully!"
+    "form_success": "Message sent successfully!",
+    "adjectives": ["Rafael.", "SWE student.", "programmer.", "gamer."]
 }
