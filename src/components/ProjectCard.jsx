@@ -5,7 +5,7 @@ export const ProjectCard = (project) => {
     const { project_check } = useContext(DataContext);
 
     const images = (project.images) ? project.images : "escom.jpg";
-    const {name, description, bullets, technologies} = project;
+    const {name, description, bullets, technologies, url} = project;
     return (
         <article 
             className='projects__card'
@@ -38,7 +38,7 @@ export const ProjectCard = (project) => {
                 </ul>
             </div>
             <div className='card__footer'>
-                <a href='#' className='card__footer-check'>
+                <a href={ url } className='card__footer-check' target='__blank'>
                     { project_check }
                 </a>
             </div>

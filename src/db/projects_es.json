@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "Okuro",
-            "description": "Página web y aplicación móvil diseñada para utilizar un solo sistema para estudiantes de mi escuela secundaria, con sus clases en línea, clases en vivo y entrega de tareas. Ayudando a los estudiantes de mi comunidad a ahorrar nuestros recursos informáticos.",
+            "description": "Página web y aplicación móvil diseñada para utilizar un solo sistema para estudiantes de mi escuela secundaria, con sus clases en línea, clases en vivo y entrega de tareas.",
             "bullets": [
                 "Construí una página web, utilizando Node.js, MySQL, JavaScript y Bootstrap tanto en el backend como en el frontend, integrando API REST, comunicación en tiempo real y transmisión de video con la ayuda de Express.js etc.",
                 "Trabajé con Java para construir una aplicación Android con el mismo propósito que la página web, pero enfocándome en la portabilidad, migrando todas las funcionalidades de la página web a la aplicación móvil."
@@ -14,7 +14,8 @@
                 "Android Studio",
                 "MySQL"
             ],
-            "images": "projects/okuro.png"
+            "images": "projects/okuro.png",
+            "url": "https://github.com/rafa238/okuro"
         },
 
         {
@@ -29,7 +30,8 @@
                 "Java Swing",
                 "IReport"
             ],
-            "images": "projects/REMICDMX.png"
+            "images": "projects/REMICDMX.png",
+            "url": "https://github.com/rafa238/ReMiCDMX"
         },
 
         {
@@ -46,7 +48,8 @@
                 "MySQL",
                 "Ajax"
             ],
-            "images": "projects/blogi.png"
+            "images": "projects/blogi.png",
+            "url": "https://github.com/rafa238/simple-blog"
         },
         {
             "name": "Canal 11",
@@ -61,7 +64,8 @@
                 "Flask",
                 "MySQL"
             ],
-            "images": "projects/canal11.png"
+            "images": "projects/canal11.png",
+            "url": "https://github.com/rafa238/canal_11"
         },
         {
             "name": "Asteroids",
@@ -76,7 +80,8 @@
                 "Android Studio",
                 "SQLite"
             ],
-            "images": "projects/asteroids.png"
+            "images": "projects/asteroids.png",
+            "url":"https://github.com/rafa238/asteroides"
         },
         {
             "name": "My Places",
@@ -93,7 +98,8 @@
                 "Google Maps",
                 "SQLite"
             ],
-            "images": "projects/my_places.png"
+            "images": "projects/my_places.png",
+            "url": "https://github.com/rafa238/misLugares"
         },
         {
             "name": "Peluqueria X-treme",
@@ -109,7 +115,8 @@
                 "Ajax",
                 "MySQL"
             ],
-            "images": "projects/peluqueria_Xtreme.png"
+            "images": "projects/peluqueria_Xtreme.png",
+            "url": "https://github.com/rafa238/estetica-jsp"
         }
     ]
 }
