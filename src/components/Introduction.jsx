@@ -62,7 +62,7 @@ export const Introduction = () => {
         <a href={ social_media["linkedin"] } target='__blank'>
             <img src='assets/linkedin.png' alt='Rafael linkedin'/>
         </a>
-        <a href="#contact">
+        <a href="mailto:rafalaureano642@gmail.com">
             <img src='assets/mensaje.png' alt='Rafael email'/>
         </a>
       </div>
