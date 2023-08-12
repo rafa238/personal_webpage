@@ -14,7 +14,7 @@ export const Certifications = () => {
           <div className="certifications__card" key={title}>
             <img
               className='certifications__card-img'
-              src={"/certifications/" + img} />
+              src={"certifications/" + img} />
             <p className='certifications__card-title'>
               {title}
             </p>

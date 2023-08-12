@@ -35,55 +35,55 @@
   "skills": [
     {
       "skill": "Android Studio",
-      "img": "/skills/android-studio--v3.png"
+      "img": "skills/android-studio--v3.png"
     },
     {
       "skill": "Cpp",
-      "img": "/skills/c-plus-plus.png"
+      "img": "skills/c-plus-plus.png"
     },
     {
       "skill": "C",
-      "img": "/skills/c-programming.png"
+      "img": "skills/c-programming.png"
     },
     {
       "skill": "CSS3",
-      "img": "/skills/css3.png"
+      "img": "skills/css3.png"
     },
     {
       "skill": "HTML5",
-      "img": "/skills/html-5.png"
+      "img": "skills/html-5.png"
     },
     {
       "skill": "Java",
-      "img": "/skills/java.png"
+      "img": "skills/java.png"
     },
     {
       "skill": "JavaScript",
-      "img": "/skills/javascript.png"
+      "img": "skills/javascript.png"
     },
     {
       "skill": "Kotlin",
-      "img": "/skills/kotlin.png"
+      "img": "skills/kotlin.png"
     },
     {
       "skill": "linux",
-      "img": "/skills/linux.png"
+      "img": "skills/linux.png"
     },
     {
       "skill": "MySQL",
-      "img": "/skills/my-sql.png"
+      "img": "skills/my-sql.png"
     },
     {
       "skill": "NodeJS",
-      "img": "/skills/node-js.png"
+      "img": "skills/node-js.png"
     },
     {
       "skill": "Python",
-      "img": "/skills/python.png"
+      "img": "skills/python.png"
     },
     {
       "skill": "Flask",
-      "img": "/skills/flask.png"
+      "img": "skills/flask.png"
     }
   ],
   "certifications": [

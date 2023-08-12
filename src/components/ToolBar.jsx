@@ -14,19 +14,19 @@ export const ToolBar = () => {
   return (
     <div className='toolbar' id='content'>
       <Link className={getClassName(isActive)} to="/personal_webpage/" >
-        <img src='/toolbar/proyectos.png' />
+        <img src='toolbar/proyectos.png' />
         <span>{projects}</span>
       </Link>
       <Link className={getClassName(isActive)} to="/personal_webpage/skills">
-        <img src='/toolbar/habilidades.png' />
+        <img src='toolbar/habilidades.png' />
         <span>{skills}</span>
       </Link>
       <Link className={getClassName(isActive)} to="/personal_webpage/certifications">
-        <img src='/toolbar/certificado.png' />
+        <img src='toolbar/certificado.png' />
         <span>{certifications}</span>
       </Link>
       <Link className={getClassName(isActive)} to="/personal_webpage/contact">
-        <img src='/toolbar/contacto.png' />
+        <img src='toolbar/contacto.png' />
         <span>{contact}</span>
       </Link>
     </div>

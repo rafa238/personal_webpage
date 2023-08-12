@@ -24,7 +24,7 @@ export const Navbar = () => {
   return (
     <nav className='nav' style={{ backgroundColor: navBackground }}>
       <div className='nav__left'>
-        <img className='nav-name' src='/my_icon.ico'/>
+        <img className='nav-name' src='my_icon.ico'/>
         <ul className='main-nav'>
           <li className='main-nav__item'>
             <a href='#' > { actions.home } </a>

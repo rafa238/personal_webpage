@@ -25,7 +25,7 @@ export const ProjectCard = (project) => {
                             src='assets/github.png'
                             alt='Github repository' />
                         </a>
-                        <img src='/assets/cerca.png' className='overlay__content-close'/>
+                        <img src='assets/cerca.png' className='overlay__content-close'/>
                     </div>    
                 </div>  
             )}
