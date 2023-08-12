@@ -1,27 +1,107 @@
 {
-    "greeting": "¡Hola! Soy ",
-    "description": "Estudiante de Sistemas Computacionales con pasión por la programación, los algoritmos y el machine learning. Principiante en programación competitiva. Explorando continuamente el mundo de la tecnología y buscando oportunidades para crecer profesionalmente en proyectos innovadores.\n ¡Bienvenido a mi página web personal!",
-    "social_media": {
-        "github": "https://github.com/rafa238",
-        "linkedin": "https://www.linkedin.com/in/ju%C3%A1rez-laureano-rafael/"
+  "greeting": "¡Hola! Soy ",
+  "description": "Estudiante de Sistemas Computacionales con pasión por la programación, los algoritmos y el machine learning. Principiante en programación competitiva. Explorando continuamente el mundo de la tecnología y buscando oportunidades para crecer profesionalmente en proyectos innovadores.\n ¡Bienvenido a mi página web personal!",
+  "social_media": {
+    "github": "https://github.com/rafa238",
+    "linkedin": "https://www.linkedin.com/in/ju%C3%A1rez-laureano-rafael/"
+  },
+  "resume_check": "Mira mi currículum",
+  "project_check": "Mira el código",
+  "projects_title": "Proyectos hechos con ❤️",
+  "actions": {
+    "contact": "Contacto",
+    "projects": "Proyectos",
+    "home": "Inicio",
+    "certifications": "Certificados",
+    "skills": "Habilidades",
+    "content": "Contenido"
+  },
+  "contact": {
+    "contact_me": "¡Mantengámonos en contacto!",
+    "send_me": "Envíame un correo directamente",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "name": "Nombre",
+    "subject": "Motivo",
+    "content": "Contenido"
+  },
+  "form_success": "¡Message enviado con éxito!",
+  "adjectives": [
+    "Rafael.",
+    "estudiante de Ingeniería.",
+    "programador.",
+    "gamer."
+  ],
+  "skills": [
+    {
+      "skill": "Android Studio",
+      "img": "/skills/android-studio--v3.png"
     },
-    "resume_check": "Mira mi currículum",
-    "project_check": "Mira el código",
-    "projects_title": "Proyectos hechos con ❤️",
-    "actions": {
-        "contact": "Contacto",
-        "projects": "Proyectos",
-        "home": "Inicio"
+    {
+      "skill": "Cpp",
+      "img": "/skills/c-plus-plus.png"
     },
-    "contact":{
-        "contact_me": "¡Mantengámonos en contacto!",
-        "send_me": "Envíame un correo directamente",
-        "email": "Correo electrónico",
-        "phone": "Teléfono",
-        "name": "Nombre",
-        "subject": "Motivo",
-        "content": "Contenido"
+    {
+      "skill": "C",
+      "img": "/skills/c-programming.png"
     },
-    "form_success": "¡Message enviado con éxito!",
-    "adjectives": ["Rafael.", "estudiante de Ingeniería.", "programador.", "gamer."]
+    {
+      "skill": "CSS3",
+      "img": "/skills/css3.png"
+    },
+    {
+      "skill": "HTML5",
+      "img": "/skills/html-5.png"
+    },
+    {
+      "skill": "Java",
+      "img": "/skills/java.png"
+    },
+    {
+      "skill": "JavaScript",
+      "img": "/skills/javascript.png"
+    },
+    {
+      "skill": "Kotlin",
+      "img": "/skills/kotlin.png"
+    },
+    {
+      "skill": "linux",
+      "img": "/skills/linux.png"
+    },
+    {
+      "skill": "MySQL",
+      "img": "/skills/my-sql.png"
+    },
+    {
+      "skill": "NodeJS",
+      "img": "/skills/node-js.png"
+    },
+    {
+      "skill": "Python",
+      "img": "/skills/python.png"
+    },
+    {
+      "skill": "Flask",
+      "img": "/skills/flask.png"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Master in Python",
+      "img": "master_python.jpg"
+    },
+    {
+      "title": "Introduction to Terminal",
+      "img": "terminal.jpg"
+    },
+    {
+      "title": "Introduction to Kotlin",
+      "img": "kotlin.jpg"
+    },
+    {
+      "title": "Master Code (Competitive Programming)",
+      "img": "master_code.jpg"
+    }
+  ]
 }

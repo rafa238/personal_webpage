@@ -10,7 +10,6 @@ export const Contact = () => {
   return (
     <div 
       className='contact' 
-      id="contact"
       data-aos="fade-bottom"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="2000">
