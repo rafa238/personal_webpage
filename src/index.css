@@ -276,9 +276,13 @@ html {
 }
 
 .card__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 1.3rem;
   padding-top: 1rem;
   width: 100%;
+  height: 100%;
 }
 
 .card__content h5{
@@ -287,7 +291,8 @@ html {
 }
 
 .card__content-description{
-  padding: 0;
+  margin: 2rem 0;
+  margin-top: 0;
   text-align: justify;
 }
 
@@ -393,7 +398,7 @@ html {
 
 .certifications__card-img{
   width: 20rem;
-  height: auto;
+  object-fit: cover;
 }
 
 /*Contact form*/

@@ -1,107 +1,120 @@
-@media (min-width:800px){
+@media (min-width:800px) {
 
-    .btn-blue{
+    .btn-blue {
         font-size: 1.7rem;
         padding: 1.3rem 1.8rem;
     }
 
-    .nav{
+    .nav {
         justify-content: space-between;
-        padding: 1.5rem;
+        padding: 1.5rem 5vw;
     }
-    .nav-name{
+
+    .nav-name {
         width: 5rem;
         height: auto;
     }
-    .main-nav{
+
+    .main-nav {
         font-size: 2rem;
     }
+
     /*Presentation*/
-    .presen{
+    .presen {
         padding: 6rem;
         flex-direction: row-reverse;
     }
-    .presen__main{
+
+    .presen__main {
         display: flex;
         flex-direction: column;
         padding: 4vw;
         height: 80vh;
         justify-content: space-around;
-        
+
     }
-    .presen__pictures img{
+
+    .presen__pictures img {
         width: 31rem;
         height: auto;
         margin-right: 4rem;
     }
-    .presen__main-greeting{
+
+    .presen__main-greeting {
         font-size: 5rem;
         text-align: left;
         margin-bottom: 1.3rem;
 
     }
 
-    .presen__main-description{
+    .presen__main-description {
         font-size: 2rem;
         line-height: 1.7;
     }
 
-        /*
+    /*
   toolbar section
 */
 
-.toolbar {
-    margin: 2rem;
-    margin: 6vw;
-}
+    .toolbar {
+        margin: 2rem;
+        margin: 6vw;
+    }
 
-.toolbar__item {
-    padding: 1.5rem;
-    font-size: 1.5rem;
-}
+    .toolbar__item {
+        padding: 0;
+        font-size: 1rem;
+    }
 
-.toolbar__item img {
-    width: 7rem;
-    height: auto;
-    padding: 0.5rem;
-}
+    .toolbar__item img {
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .toolbar__item span{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 
 
 
     /*projects*/
-    .projects-title{
-        margin-bottom: 2rem; 
+    .projects-title {
+        margin-bottom: 2rem;
     }
 
     /*card*/
-    .projects__card{
+    .projects__card {
 
         margin: 3rem 0.7rem;
         margin-top: 0;
     }
 
-    .card__header-title{
+    .card__header-title {
         font-size: 2.3rem;
         padding: 0.8rem 1.4rem;
     }
-    .card__content{
+
+    .card__content {
         padding-top: 0.6rem;
     }
 
-    .card__content-description{
+    .card__content-description {
         line-height: 2.3rem;
     }
-    .card__content-bullets{
+
+    .card__content-bullets {
         padding: 1.3rem;
         line-height: 2.3rem;
     }
-    .card__footer{
+
+    .card__footer {
         font-size: 2rem;
     }
 
-     /*Skills*/
+    /*Skills*/
 
-     .skills {
+    .skills {
         padding: 4rem 5rem;
         justify-content: space-around;
     }
@@ -116,33 +129,33 @@
     }
 
     .skills__item-text {
-        
+
         font-size: 2rem;
     }
 
     /*contact form*/
-    .contact h5{
+    .contact h5 {
         padding: 2rem;
     }
 
     /*footer*/
-    .footer-author{
+    .footer-author {
         font-size: 1.4rem;
     }
 
     textarea,
     .contact__form__group input[type="text"],
-    .contact__form__group input[type="email"]{
+    .contact__form__group input[type="email"] {
         margin-bottom: 1rem;
     }
 
-    .social__container__element{
+    .social__container__element {
         margin: 1.5rem;
     }
 
-    .social__container__element img{
-    width: 4rem;
-    height: 4rem;
-    transition: transform 0.6s;
+    .social__container__element img {
+        width: 4rem;
+        height: 4rem;
+        transition: transform 0.6s;
     }
 }

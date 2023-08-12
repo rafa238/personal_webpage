@@ -147,7 +147,8 @@
 
     .certifications__card-img {
         width: 25rem;
-        height: auto;
+        height: 19rem;
+        object-position: top;
     }
 
     .certifications__card-title{

@@ -13,6 +13,9 @@ export const ProjectCard = (project) => {
 
     return (
         <article
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
             className={`projects__card ${isActive ? 'active' : ''}`}
             onClick={toggleCard} >
             
@@ -36,17 +39,19 @@ export const ProjectCard = (project) => {
             </div>
             <div className='card__content'>
                 <p className='card__content-description'>{ description }</p>
-                <h5>Technologies:</h5>
-                <ul className='card__content__tech'>
-                    {
-                        technologies.map(techology => (
-                            <li className='card__content__tech-item'
-                                key={techology}>
-                                { techology }
-                            </li>
-                        ))
-                    }
-                </ul>
+                <div>
+                    <h5>Technologies:</h5>
+                    <ul className='card__content__tech'>
+                        {
+                            technologies.map(techology => (
+                                <li className='card__content__tech-item'
+                                    key={techology}>
+                                    { techology }
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
             </div>        
         </article>
     )
