@@ -1,5 +1,15 @@
 import { useContext } from 'react'
+import { FiCpu, FiServer, FiSmartphone, FiLink, FiDatabase, FiZap } from 'react-icons/fi'
 import { DataContext } from '../context/DataProvider'
+
+const skillIcons = {
+  ai: FiCpu,
+  backend: FiServer,
+  mobile: FiSmartphone,
+  apis: FiLink,
+  pipelines: FiDatabase,
+  automation: FiZap,
+}
 
 export const Skills = () => {
   const { skills, actions, skills_eyebrow } = useContext(DataContext)
@@ -14,12 +24,19 @@ export const Skills = () => {
         <span className="section-number" aria-hidden="true">03 /</span>
       </div>
       <ul className="skill-grid">
-        {skills.map(({ skill, img }) => (
-          <li className="skill-tile" key={skill}>
-            <img src={`${import.meta.env.BASE_URL}${img}`} alt="" loading="lazy" width="48" height="48" />
-            <span>{skill}</span>
-          </li>
-        ))}
+        {skills.map(({ id, skill, description }) => {
+          const Icon = skillIcons[id]
+
+          return (
+            <li className="skill-tile" key={id}>
+              <span className="skill-icon">
+                <Icon aria-hidden="true" />
+              </span>
+              <h3>{skill}</h3>
+              <p>{description}</p>
+            </li>
+          )
+        })}
       </ul>
     </section>
   )

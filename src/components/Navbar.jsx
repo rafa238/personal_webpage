@@ -1,9 +1,8 @@
 import { useContext } from 'react'
-import { Link } from 'react-router-dom'
 import { DataContext } from '../context/DataProvider'
 
 export const Navbar = () => {
-  const { language, setLanguage, navigation, actions } = useContext(DataContext)
+  const { language, setLanguage, navigation } = useContext(DataContext)
   const tooltip = navigation.switch_language
 
   return (
@@ -21,12 +20,12 @@ export const Navbar = () => {
         </a>
 
         <div className="nav-links">
-          <Link to="/personal_webpage/#content">
-            {navigation.experience}
-          </Link>
-          <Link to="/personal_webpage/contact#content">
-            {actions.contact}
-          </Link>
+          <a href="#home">
+            {navigation.about}
+          </a>
+          <a href="#content">
+            {navigation.journey}
+          </a>
         </div>
 
         <div className="language-control">

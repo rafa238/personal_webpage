@@ -36,63 +36,42 @@
   ],
   "skills": [
     {
-      "skill": "Android Studio",
-      "img": "skills/android-studio--v3.png"
+      "id": "ai",
+      "skill": "Ingeniería de IA",
+      "description": "Trabajo con LLMs, prompt engineering, MCP y técnicas de RAG. Integro modelos, agentes y herramientas para automatizar procesos con evidencia y revisión humana."
     },
     {
-      "skill": "Cpp",
-      "img": "skills/c-plus-plus.png"
+      "id": "backend",
+      "skill": "Desarrollo backend",
+      "description": "Desarrollo servicios y microservicios con Go, Node.js y C#, APIs REST y lógica de negocio. Trabajo con bases de datos SQL y MongoDB, contenedores con Docker, despliegues en Kubernetes y Azure, y pruebas unitarias y de integración."
     },
     {
-      "skill": "C",
-      "img": "skills/c-programming.png"
+      "id": "mobile",
+      "skill": "Desarrollo móvil",
+      "description": "Desarrollo aplicaciones Android con Kotlin, Java, Jetpack Compose y el patrón de arquitectura MVVM."
     },
     {
-      "skill": "CSS3",
-      "img": "skills/css3.png"
+      "id": "apis",
+      "skill": "APIs e integraciones",
+      "description": "Diseño APIs y conecto servicios y plataformas para integrar datos y funcionalidades."
     },
     {
-      "skill": "HTML5",
-      "img": "skills/html-5.png"
+      "id": "pipelines",
+      "skill": "Pipelines de datos",
+      "description": "Desarrollo flujos de extracción, procesamiento y almacenamiento de datos para análisis e investigación."
     },
     {
-      "skill": "Java",
-      "img": "skills/java.png"
-    },
-    {
-      "skill": "JavaScript",
-      "img": "skills/javascript.png"
-    },
-    {
-      "skill": "Kotlin",
-      "img": "skills/kotlin.png"
-    },
-    {
-      "skill": "linux",
-      "img": "skills/linux.png"
-    },
-    {
-      "skill": "MySQL",
-      "img": "skills/my-sql.png"
-    },
-    {
-      "skill": "NodeJS",
-      "img": "skills/node-js.png"
-    },
-    {
-      "skill": "Python",
-      "img": "skills/python.png"
-    },
-    {
-      "skill": "Flask",
-      "img": "skills/flask.png"
+      "id": "automation",
+      "skill": "Automatización de procesos",
+      "description": "Transformo tareas manuales en flujos automatizados y herramientas internas que reducen el trabajo repetitivo."
     }
   ],
   "navigation": {
     "label": "Navegación principal",
     "sections": "Secciones del portafolio",
     "switch_language": "Switch to English",
-    "experience": "Experiencia"
+    "about": "Sobre mí",
+    "journey": "Trayectoria"
   },
   "hero": {
     "eyebrow": "SOFTWARE, IDEAS Y EXPERIENCIAS",
@@ -113,7 +92,7 @@
     "technologies": "Tecnologías",
     "contribution": "Mi contribución"
   },
-  "skills_eyebrow": "MI CAJA DE HERRAMIENTAS",
+  "skills_eyebrow": "LO QUE CONSTRUYO",
   "not_found": "Página no encontrada",
   "footer_email": "Correo ↗"
 }

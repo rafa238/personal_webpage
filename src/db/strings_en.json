@@ -36,63 +36,42 @@
   ],
   "skills": [
     {
-      "skill": "Android Studio",
-      "img": "skills/android-studio--v3.png"
+      "id": "ai",
+      "skill": "AI Engineering",
+      "description": "I work with LLMs, prompt engineering, MCP and RAG techniques. I integrate models, agents and tools to automate processes with evidence and human review."
     },
     {
-      "skill": "Cpp",
-      "img": "skills/c-plus-plus.png"
+      "id": "backend",
+      "skill": "Backend Engineering",
+      "description": "I build services and microservices with Go, Node.js and C#, REST APIs and business logic. I work with SQL databases and MongoDB, Docker containers, deployments on Kubernetes and Azure, and unit and integration testing."
     },
     {
-      "skill": "C",
-      "img": "skills/c-programming.png"
+      "id": "mobile",
+      "skill": "Mobile Development",
+      "description": "I develop Android applications with Kotlin, Java, Jetpack Compose and the MVVM architecture pattern."
     },
     {
-      "skill": "CSS3",
-      "img": "skills/css3.png"
+      "id": "apis",
+      "skill": "APIs & Integrations",
+      "description": "I design APIs and connect services and platforms to integrate data and functionality."
     },
     {
-      "skill": "HTML5",
-      "img": "skills/html-5.png"
+      "id": "pipelines",
+      "skill": "Data Pipelines",
+      "description": "I build data extraction, processing and storage pipelines for analytics and research."
     },
     {
-      "skill": "Java",
-      "img": "skills/java.png"
-    },
-    {
-      "skill": "JavaScript",
-      "img": "skills/javascript.png"
-    },
-    {
-      "skill": "Kotlin",
-      "img": "skills/kotlin.png"
-    },
-    {
-      "skill": "linux",
-      "img": "skills/linux.png"
-    },
-    {
-      "skill": "MySQL",
-      "img": "skills/my-sql.png"
-    },
-    {
-      "skill": "NodeJS",
-      "img": "skills/node-js.png"
-    },
-    {
-      "skill": "Python",
-      "img": "skills/python.png"
-    },
-    {
-      "skill": "Flask",
-      "img": "skills/flask.png"
+      "id": "automation",
+      "skill": "Workflow Automation",
+      "description": "I turn manual tasks into automated workflows and internal tools that reduce repetitive work."
     }
   ],
   "navigation": {
     "label": "Main navigation",
     "sections": "Portfolio sections",
     "switch_language": "Cambiar a español",
-    "experience": "Experience"
+    "about": "About me",
+    "journey": "My journey"
   },
   "hero": {
     "eyebrow": "SOFTWARE, IDEAS & EXPERIENCES",
@@ -113,7 +92,7 @@
     "technologies": "Technologies",
     "contribution": "My contribution"
   },
-  "skills_eyebrow": "MY TOOLKIT",
+  "skills_eyebrow": "WHAT I BUILD",
   "not_found": "Page not found",
   "footer_email": "Email ↗"
 }
