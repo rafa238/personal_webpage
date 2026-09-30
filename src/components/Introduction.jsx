@@ -1,105 +1,42 @@
-import React, { Children, useContext, useEffect, useRef, useState } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { DataContext } from '../context/DataProvider'
 import Typed from 'typed.js'
-
-const images = ["mi_foto2_cubre.png", "mi_foto2.png"]
-let idx = 0;
+import { Link } from 'react-router-dom'
 
 export const Introduction = () => {
-  const { greeting, description, resume_check, social_media, adjectives } = useContext(DataContext);
-  const [imgIdx, setImgIdx] = useState(idx);
-  const adjs = useRef(null);
-
+  const { hero, description, social_media, adjectives } = useContext(DataContext)
+  const role = useRef(null)
   useEffect(() => {
-    //change image
-    const intervalId = setInterval(function () {
-      setImgIdx((idx++) % images.length);
-    }, 4000);
-
-    //typed efect
-    const typed = new Typed(adjs.current, {
-      strings: adjectives,
-      typeSpeed: 200,
-      backSpeed: 100,
-      onComplete: (self) => {
-        //wait one second and reset
-        setTimeout(() => {
-          self.reset();
-        }, 1000);
-      }
-    });
-
-    return () => {
-      //interval image
-      clearInterval(intervalId);
-      //interval typing
-      typed.destroy();
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)')
+    let typed
+    const update = () => {
+      typed?.destroy()
+      if (preference.matches) role.current.textContent = adjectives.join(' · ')
+      else typed = new Typed(role.current, { strings: adjectives, typeSpeed: 48, backSpeed: 24, backDelay: 2200, loop: true })
     }
-  }, [adjectives]);
-
-
+    update()
+    preference.addEventListener('change', update)
+    return () => { typed?.destroy(); preference.removeEventListener('change', update) }
+  }, [adjectives])
   return (
-    <section className='presen'>
-      <figcaption className='presen__pictures'>
-        <img
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          src={images[imgIdx]}
-          alt='Rafael Juarez Laureano fotografia' />
-      </figcaption>
-      <div className='presen__main'>
-        <h1 className='presen__main-greeting'>
-          {greeting} <span ref={adjs}></span>
-        </h1>
-        <p className='presen__main-description'>{description}</p>
-        <div className='social__container'
-          data-aos="fade-right"
-          data-aos-duration="3000">
-
-          <span className='social__container__element'>
-            <a href={social_media["github"]} target='__blank'>
-              <img
-                className='light'
-                src='assets/github.png'
-                alt='Rafael github' />
-            </a>
-          </span>
-          <span className='social__container__element'>
-            <a href={social_media["linkedin"]} target='__blank'>
-              <img
-                className='light'
-                src='assets/linkedin.png'
-                alt='Rafael linkedin' />
-            </a>
-          </span>
-
-          <span className='social__container__element'>
-            <a href="mailto:rafalaureano642@gmail.com">
-              <img
-                className='light'
-                src='assets/mensaje.png'
-                alt='Rafael email' />
-            </a>
-          </span>
-
-          <span className='social__container__element'>
-            <a href="https://drive.google.com/file/d/1kVvRcr4bNo7RjBhS2LVNTquH23Y3tGNA/view" target="__blank">
-              <img
-                className='light'
-                src='assets/cv.png'
-                alt='Rafael resume' />
-            </a>
-          </span>
+    <section className="hero" id="home" aria-labelledby="hero-name">
+      <div className="hero-copy">
+        <p className="eyebrow">{hero.eyebrow}</p>
+        <h1 id="hero-name">Rafael Juárez<br /><span>Laureano.</span></h1>
+        <div className="hero-role"><span className="sr-only">{adjectives.join(' · ')}</span><span aria-hidden="true"><span ref={role} /></span></div>
+        <p className="hero-description">{description}</p>
+        <p className="hero-school">ESCOM · Instituto Politécnico Nacional</p>
+        <div className="hero-actions">
+          <Link className="primary-link" to="/personal_webpage/#content">{hero.explore} <span aria-hidden="true">↗</span></Link>
+          <a className="secondary-link" href="mailto:rafalaureano642@gmail.com">{hero.contact} <span aria-hidden="true">↗</span></a>
+        </div>
+        <div className="hero-social">
+          <a href={`${import.meta.env.BASE_URL}Resume_Rafael.pdf`} target="_blank" rel="noreferrer">{hero.resume}</a>
+          <a href={social_media.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href={social_media.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </div>
-
-      {/*<a
-        href='https://drive.google.com/file/d/1kVvRcr4bNo7RjBhS2LVNTquH23Y3tGNA/view'
-        className='btn-blue shadow'
-        target='__blank'
-      >
-        {resume_check}
-      </a>*/}
+      <figure className="hero-photo"><img src={`${import.meta.env.BASE_URL}photos/golden-gate.jpg`} alt={hero.photo_alt} width="800" height="800" /><figcaption>San Francisco, California</figcaption></figure>
     </section>
   )
 }

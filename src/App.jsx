@@ -1,45 +1,57 @@
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { useContext, useEffect } from 'react'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { Introduction } from './components/Introduction'
 import { Navbar } from './components/Navbar'
 import { ProjectsList } from './components/ProjectsList'
-import { DataProvider } from './context/DataProvider'
-import './index.css';
-import './index_m.css';
-import './index_l.css';
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { DataProvider, DataContext } from './context/DataProvider'
 import { ToolBar } from './components/ToolBar'
 import { Skills } from './components/Skills'
-import { Awards } from './components/Awards'
-import { Certifications } from './components/Certifications'
+import { Experience } from './components/Experience'
+import './index.css'
+import './index_m.css'
+import './index_l.css'
+import './portfolio.css'
+
+const SectionScroll = () => {
+  const { pathname, hash } = useLocation()
+
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView()
+  }, [pathname, hash])
+
+  return null
+}
+
+const NotFound = () => {
+  const { not_found } = useContext(DataContext)
+
+  return <h1>{not_found}</h1>
+}
 
 function App() {
-  useEffect(() => {
-    AOS.init();
-  }, [])
-
-
   return (
     <BrowserRouter>
-    <DataProvider>
-      <main className='container'>
-        <Navbar/>
-        <Introduction/>
-        <ToolBar/>
-        <Routes>
-          <Route path="/personal_webpage/" element={<ProjectsList/>}/>
-          <Route path="/personal_webpage/skills" element={<Skills/>} />
-          {/*<Route path="/personal_webpage/awards" element={<Awards/>} />*/}
-          <Route path="/personal_webpage/certifications" element={<Certifications/>} />
-          <Route path="/personal_webpage/contact" element={<Contact/>} />
-          <Route path="*" render={() => <h1>Error 404</h1>} />
-        </Routes>
-        <Footer/>
-      </main>
-    </DataProvider>
+      <DataProvider>
+        <SectionScroll />
+        <main className="container">
+          <Navbar />
+          <Introduction />
+          <ToolBar />
+          <div className="section-panel">
+            <Routes>
+              <Route path="/personal_webpage/" element={<Experience />} />
+              <Route path="/personal_webpage/projects" element={<ProjectsList />} />
+              <Route path="/personal_webpage/skills" element={<Skills />} />
+              <Route path="/personal_webpage/certifications" element={<Navigate to="/personal_webpage/#content" replace />} />
+              <Route path="/personal_webpage/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+          <Footer />
+        </main>
+      </DataProvider>
     </BrowserRouter>
   )
 }

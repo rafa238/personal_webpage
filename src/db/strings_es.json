@@ -1,6 +1,6 @@
 {
   "greeting": "¡Hola! Soy ",
-  "description": "Estudiante de Sistemas Computacionales con pasión por la programación, los algoritmos y el machine learning. Principiante en programación competitiva. Explorando continuamente el mundo de la tecnología y buscando oportunidades para crecer profesionalmente en proyectos innovadores.\n ¡Bienvenido a mi página web personal!",
+  "description": "Desarrollo software en backend, aplicaciones móviles e inteligencia artificial, con experiencia en grandes compañías tecnológicas como Microsoft y Uber.",
   "social_media": {
     "github": "https://github.com/rafa238",
     "linkedin": "https://www.linkedin.com/in/ju%C3%A1rez-laureano-rafael/"
@@ -12,7 +12,6 @@
     "contact": "Contacto",
     "projects": "Proyectos",
     "home": "Inicio",
-    "certifications": "Certificados",
     "skills": "Habilidades",
     "content": "Contenido"
   },
@@ -23,14 +22,17 @@
     "phone": "Teléfono",
     "name": "Nombre",
     "subject": "Motivo",
-    "content": "Contenido"
+    "content": "Contenido",
+    "eyebrow": "CONVERSEMOS",
+    "description": "¿Tienes un proyecto, una oportunidad o una idea? Me encantará conocerla.",
+    "sending": "Enviando…",
+    "submit": "Enviar mensaje ↗",
+    "error": "No se pudo enviar. Inténtalo de nuevo o escríbeme por correo."
   },
-  "form_success": "¡Message enviado con éxito!",
+  "form_success": "¡Mensaje enviado con éxito!",
   "adjectives": [
-    "Rafael.",
-    "estudiante de Ingeniería.",
-    "programador.",
-    "gamer."
+    "Software Engineer",
+    "Estudiante de Ingeniería en Sistemas Computacionales"
   ],
   "skills": [
     {
@@ -86,22 +88,32 @@
       "img": "skills/flask.png"
     }
   ],
-  "certifications": [
-    {
-      "title": "Master in Python",
-      "img": "master_python.jpg"
-    },
-    {
-      "title": "Introduction to Terminal",
-      "img": "terminal.jpg"
-    },
-    {
-      "title": "Introduction to Kotlin",
-      "img": "kotlin.jpg"
-    },
-    {
-      "title": "Master Code (Competitive Programming)",
-      "img": "master_code.jpg"
-    }
-  ]
+  "navigation": {
+    "label": "Navegación principal",
+    "sections": "Secciones del portafolio",
+    "switch_language": "Switch to English",
+    "experience": "Experiencia"
+  },
+  "hero": {
+    "eyebrow": "SOFTWARE, IDEAS Y EXPERIENCIAS",
+    "explore": "Explorar experiencia",
+    "contact": "Hablemos",
+    "resume": "Ver CV ↗",
+    "photo_alt": "Rafael frente al puente Golden Gate"
+  },
+  "experience_labels": {
+    "eyebrow": "MI TRAYECTORIA",
+    "title": "Experiencia profesional",
+    "details": "Contribuciones y tecnologías",
+    "photo_alt": "Rafael en {company}"
+  },
+  "project_labels": {
+    "eyebrow": "IDEAS EN PRÁCTICA",
+    "photo_alt": "Vista de {name}",
+    "technologies": "Tecnologías",
+    "contribution": "Mi contribución"
+  },
+  "skills_eyebrow": "MI CAJA DE HERRAMIENTAS",
+  "not_found": "Página no encontrada",
+  "footer_email": "Correo ↗"
 }

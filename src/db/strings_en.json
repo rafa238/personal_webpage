@@ -1,6 +1,6 @@
 {
   "greeting": "Hello! I'm ",
-  "description": "Computer Systems student with a passion for programming, algorithms, and machine learning. Beginner in competitive programming. Continually exploring the world of technology and seeking opportunities to grow professionally in innovative projects. Welcome to my personal webpage!",
+  "description": "I build backend systems, mobile applications and AI-powered software, with experience at major technology companies such as Microsoft and Uber.",
   "social_media": {
     "github": "https://github.com/rafa238",
     "linkedin": "https://www.linkedin.com/in/ju%C3%A1rez-laureano-rafael/"
@@ -12,7 +12,6 @@
     "contact": "Contact",
     "projects": "Projects",
     "home": "Home",
-    "certifications": "Certifications",
     "skills": "Skills",
     "content": "Content"
   },
@@ -23,14 +22,17 @@
     "phone": "Phone",
     "name": "Name",
     "subject": "Subject",
-    "content": "Content"
+    "content": "Content",
+    "eyebrow": "LET’S CONNECT",
+    "description": "Have a project, an opportunity or an idea? I’d love to hear about it.",
+    "sending": "Sending…",
+    "submit": "Send message ↗",
+    "error": "Unable to send. Please try again or contact me by email."
   },
   "form_success": "Message sent successfully!",
   "adjectives": [
-    "Rafael.",
-    "SWE student.",
-    "programmer.",
-    "gamer."
+    "Software Engineer",
+    "Computer Systems Engineering Student"
   ],
   "skills": [
     {
@@ -86,22 +88,32 @@
       "img": "skills/flask.png"
     }
   ],
-  "certifications": [
-    {
-      "title": "Master in Python",
-      "img": "master_python.jpg"
-    },
-    {
-      "title": "Introduction to Terminal",
-      "img": "terminal.jpg"
-    },
-    {
-      "title": "Introduction to Kotlin",
-      "img": "kotlin.jpg"
-    },
-    {
-      "title": "Master Code (Competitive Programming)",
-      "img": "master_code.jpg"
-    }
-  ]
+  "navigation": {
+    "label": "Main navigation",
+    "sections": "Portfolio sections",
+    "switch_language": "Cambiar a español",
+    "experience": "Experience"
+  },
+  "hero": {
+    "eyebrow": "SOFTWARE, IDEAS & EXPERIENCES",
+    "explore": "Explore experience",
+    "contact": "Get in touch",
+    "resume": "View résumé ↗",
+    "photo_alt": "Rafael in front of the Golden Gate Bridge"
+  },
+  "experience_labels": {
+    "eyebrow": "MY JOURNEY",
+    "title": "Professional experience",
+    "details": "Contributions & technologies",
+    "photo_alt": "Rafael at {company}"
+  },
+  "project_labels": {
+    "eyebrow": "IDEAS INTO PRACTICE",
+    "photo_alt": "{name} preview",
+    "technologies": "Technologies",
+    "contribution": "My contribution"
+  },
+  "skills_eyebrow": "MY TOOLKIT",
+  "not_found": "Page not found",
+  "footer_email": "Email ↗"
 }

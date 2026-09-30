@@ -1,51 +1,36 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
+import { FiMail, FiPhone, FiGithub, FiLinkedin } from 'react-icons/fi'
 import { DataContext } from '../context/DataProvider'
-import { Form } from './Form';
-import { AiOutlinePhone, AiOutlineMail, AiOutlineLinkedin} from 'react-icons/ai';
-import { BsGithub} from 'react-icons/bs';
+import { Form } from './Form'
 
 export const Contact = () => {
-  const {social_media, contact} = useContext(DataContext);
-  const {contact_me, send_me, email, phone} = contact;
+  const { social_media, contact, actions } = useContext(DataContext)
+
   return (
-    <div 
-      className='contact' 
-      data-aos="fade-bottom"
-      data-aos-anchor-placement="center-bottom"
-      data-aos-duration="2000">
-      <div className='contact__container shadow'>
-        <div className='contact__info'>
-          <h5>{ contact_me }</h5>
-
-          <p className='contact__info-item'>
-            <AiOutlineMail/>
-            <strong> { email }:</strong> <br/> 
-            rafalaureano642@gmail.com
-          </p>
-
-          <p className='contact__info-item'>
-            <AiOutlinePhone/>
-            <strong> { phone }:</strong> <br/> 
-            (+52) 55 8727 7559
-          </p>
-
-          <p className='contact__info-item'>
-            <BsGithub/>
-            <strong> github:</strong> <br/>
-            <a href={social_media["github"]} target='_blank'>rafa238</a>
-          </p>
-
-          <p className='contact__info-item'>
-            <AiOutlineLinkedin/>
-            <strong> Linkedin:</strong> <br/>
-            <a href={social_media["linkedin"]} target='_blank'>Juarez Laureano Rafael</a>
-          </p>
+    <section className="portfolio-section" aria-labelledby="contact-title">
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow">{contact.eyebrow}</p>
+          <h2 id="contact-title">{actions.contact}</h2>
         </div>
-        <div className='contact__form'>
-          <h5> { send_me } </h5>
+        <span className="section-number" aria-hidden="true">04 /</span>
+      </div>
+      <div className="contact-layout">
+        <div className="contact-card">
+          <h3>{contact.contact_me}</h3>
+          <p>{contact.description}</p>
+          <div className="contact-methods">
+            <a href="mailto:rafalaureano642@gmail.com"><FiMail aria-hidden="true" /><span>{contact.email}<strong>rafalaureano642@gmail.com</strong></span></a>
+            <a href="tel:+525587277559"><FiPhone aria-hidden="true" /><span>{contact.phone}<strong>+52 55 8727 7559</strong></span></a>
+            <a href={social_media.github} target="_blank" rel="noreferrer"><FiGithub aria-hidden="true" /><span>GitHub<strong>rafa238 ↗</strong></span></a>
+            <a href={social_media.linkedin} target="_blank" rel="noreferrer"><FiLinkedin aria-hidden="true" /><span>LinkedIn<strong>Rafael Juárez Laureano ↗</strong></span></a>
+          </div>
+        </div>
+        <div className="message-card">
+          <h3>{contact.send_me}</h3>
           <Form />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

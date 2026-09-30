@@ -1,34 +1,43 @@
-import React, { useContext } from 'react'
-import { Link, useMatch } from 'react-router-dom'
-import { DataContext } from '../context/DataProvider';
-
-function getClassName(active) {
-  return (active) ? 'toolbar__item active' : 'toolbar__item';
-}
+import { useContext, useEffect, useRef } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
+import { FiBriefcase, FiCode, FiLayers, FiMail } from 'react-icons/fi'
+import { DataContext } from '../context/DataProvider'
 
 export const ToolBar = () => {
-  const {actions} = useContext(DataContext);
-  const { contact, projects, certifications, skills} = actions;
-  const isActive = useMatch('/');
+  const { actions, language, navigation: navigation_labels, experience_labels } = useContext(DataContext)
+  const { pathname } = useLocation()
+  const navigation = useRef(null)
+  const sections = [
+    { path: '', label: experience_labels.title, Icon: FiBriefcase },
+    { path: 'projects', label: actions.projects, Icon: FiCode },
+    { path: 'skills', label: actions.skills, Icon: FiLayers },
+    { path: 'contact', label: actions.contact, Icon: FiMail },
+  ]
+
+  useEffect(() => {
+    const active = navigation.current?.querySelector('[aria-current="page"]')
+    if (active) navigation.current.scrollLeft = active.offsetLeft - navigation.current.offsetLeft - 12
+  }, [pathname, language])
 
   return (
-    <div className='toolbar' id='content'>
-      <Link className={getClassName(isActive)} to="/personal_webpage/" >
-        <img src='toolbar/proyectos.png' />
-        <span>{projects}</span>
-      </Link>
-      <Link className={getClassName(isActive)} to="/personal_webpage/skills">
-        <img src='toolbar/habilidades.png' />
-        <span>{skills}</span>
-      </Link>
-      <Link className={getClassName(isActive)} to="/personal_webpage/certifications">
-        <img src='toolbar/certificado.png' />
-        <span>{certifications}</span>
-      </Link>
-      <Link className={getClassName(isActive)} to="/personal_webpage/contact">
-        <img src='toolbar/contacto.png' />
-        <span>{contact}</span>
-      </Link>
+    <div className="section-switcher" id="content">
+      <nav
+        className="section-links"
+        aria-label={navigation_labels.sections}
+        ref={navigation}
+      >
+        {sections.map(({ path, label, Icon }) => (
+          <NavLink
+            key={path}
+            to={`/personal_webpage/${path}#content`}
+            end
+            className={({ isActive }) => `section-link${isActive ? ' is-active' : ''}`}
+          >
+            <Icon aria-hidden="true" />
+            <span>{label}</span>
+          </NavLink>
+        ))}
+      </nav>
     </div>
   )
 }

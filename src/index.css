@@ -370,37 +370,6 @@ html {
   height: 4rem;
 }
 
-/*certifications*/
-.certifications{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 3rem;
-  align-items: center;
-}
-
-.certifications__card{
-  margin: 2rem 0;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  border: solid 0.2rem var(--blue-gray-light);
-  border-radius: 1rem;
-}
-
-.certifications__card-title{
-  margin: auto;
-  margin-left: 0.5rem;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.certifications__card-img{
-  width: 20rem;
-  object-fit: cover;
-}
-
 /*Contact form*/
 .contact{
   width: 100%;

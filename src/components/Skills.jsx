@@ -1,26 +1,26 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../context/DataProvider';
+import { useContext } from 'react'
+import { DataContext } from '../context/DataProvider'
 
 export const Skills = () => {
-  const { skills } = useContext(DataContext);
-  console.log(skills)
+  const { skills, actions, skills_eyebrow } = useContext(DataContext)
+
   return (
-    <div className='skills'>
-      {
-        skills.map( skill => (
-          <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000"
-            className="skills__item" 
-            key={skill.skill}>
-            <img src={skill.img} className='skills__item-img'/>
-            <span className='skills__item-text'>
-              {skill.skill}
-            </span>
-          </div>
-        ))
-      }
-    </div>
+    <section className="portfolio-section" aria-labelledby="skills-title">
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow">{skills_eyebrow}</p>
+          <h2 id="skills-title">{actions.skills}</h2>
+        </div>
+        <span className="section-number" aria-hidden="true">03 /</span>
+      </div>
+      <ul className="skill-grid">
+        {skills.map(({ skill, img }) => (
+          <li className="skill-tile" key={skill}>
+            <img src={`${import.meta.env.BASE_URL}${img}`} alt="" loading="lazy" width="48" height="48" />
+            <span>{skill}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }

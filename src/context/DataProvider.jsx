@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 import projects_en from '../db/projects_en.json';
 import projects_es from '../db/projects_es.json';
 import strings_en from '../db/strings_en.json';
@@ -9,7 +9,13 @@ const DataContext = createContext();
 const DataProvider = (props) => {
     //true for spanish
     //false for english
-    const [language, setLanguage] = useState(true);   
+    const [language, setLanguage] = useState(() => {
+        try { return localStorage.getItem('portfolio-language') !== 'en' } catch { return true }
+    });
+    useEffect(() => {
+        document.documentElement.lang = language ? 'es' : 'en';
+        try { localStorage.setItem('portfolio-language', language ? 'es' : 'en') } catch { /* Storage may be disabled. */ }
+    }, [language]);
     const projects = (language) ? projects_es : projects_en;
     const data = (language) ? strings_es : strings_en;
 

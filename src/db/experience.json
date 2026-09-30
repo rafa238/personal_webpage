@@ -1,0 +1,183 @@
+[
+  {
+    "id": "microsoft-2026",
+    "company": "Microsoft",
+    "role": "Software Engineer Intern",
+    "dates": {
+      "es": "jun–sep 2026",
+      "en": "Jun–Sep 2026"
+    },
+    "location": "Redmond, WA",
+    "photo": "microsoft",
+    "summary": {
+      "es": "Desarrollo de un agente de seguridad con IA para analizar dominios de tráfico saliente y proponer cambios a reglas de firewall, con evidencia y revisión humana.",
+      "en": "Developed an AI security agent to analyze outbound traffic domains and propose evidence-backed firewall rule changes for human review."
+    },
+    "details": {
+      "es": [
+        "Microsoft SRE Agent y telemetría en Kusto para detectar dominios desconocidos.",
+        "Integración de análisis de dominios y señales de aprobaciones anteriores.",
+        "Generación de pull requests con evidencia y contexto para revisión de seguridad."
+      ],
+      "en": [
+        "Microsoft SRE Agent and Kusto telemetry to detect unknown domains.",
+        "Integrated domain scanning and historical approval signals.",
+        "Generated pull requests with evidence and context for security review."
+      ]
+    }
+  },
+  {
+    "id": "uber-2025",
+    "company": "Uber",
+    "role": "Software Engineer Intern",
+    "dates": {
+      "es": "oct 2025–ene 2026",
+      "en": "Oct 2025–Jan 2026"
+    },
+    "location": "San Francisco, CA",
+    "photo": "uber",
+    "summary": {
+      "es": "Herramientas de diagnóstico para detectar bloqueos en Android y mejoras al sistema interno de previsualización de componentes de la app de conductores.",
+      "en": "Built diagnostic tools to detect Android hangs and improved internal component previews for the Driver app."
+    },
+    "details": {
+      "es": [
+        "Desarrollo de un watchdog para detectar ANRs latentes y capturar stack traces en modo debug.",
+        "Diseño modular con thread pools, Factory e inyección de dependencias.",
+        "Prototipo con Jetpack Compose e implementación ligera con Toast; nueva pestaña de previsualización de componentes."
+      ],
+      "en": [
+        "Developed a watchdog to detect latent ANRs and capture stack traces in debug mode.",
+        "Modular design using thread pools, Factory patterns and dependency injection.",
+        "Prototyped with Jetpack Compose and shipped a lightweight Toast implementation; built a component preview tab."
+      ]
+    }
+  },
+  {
+    "id": "microsoft-2025",
+    "company": "Microsoft",
+    "role": "Software Engineer Intern",
+    "dates": {
+      "es": "jun–sep 2025",
+      "en": "Jun–Sep 2025"
+    },
+    "location": "Redmond, WA",
+    "photo": null,
+    "summary": {
+      "es": "Desarrollo de una herramienta con IA para automatizar el redireccionamiento de tráfico de servidores, reduciendo un proceso de más de 30 minutos a menos de uno.",
+      "en": "Built an AI-powered tool to automate server traffic rerouting, reducing a workflow from over 30 minutes to under one minute."
+    },
+    "details": {
+      "es": [
+        "Servidor MCP desplegado en Azure Container Apps con Docker y SSE.",
+        "Integración de GPT-4 mediante Azure AI Foundry y Semantic Kernel en C#.",
+        "Interfaz de chat con Blazor y Fluent UI."
+      ],
+      "en": [
+        "Deployed an MCP server to Azure Container Apps using Docker and SSE.",
+        "Integrated GPT-4 through Azure AI Foundry and Semantic Kernel in C#.",
+        "Built a chat interface with Blazor and Fluent UI."
+      ]
+    }
+  },
+  {
+    "id": "bullmedia",
+    "company": "Bullmedia",
+    "role": "Software Engineer",
+    "dates": {
+      "es": "ene–jun 2025",
+      "en": "Jan–Jun 2025"
+    },
+    "location": "Ciudad de México",
+    "photo": null,
+    "summary": {
+      "es": "Sistemas de análisis y dashboards para más de 1,000 conductores, con procesamiento de más de 200,000 registros mensuales de viajes y pagos.",
+      "en": "Built analytics systems and dashboards for over 1,000 drivers, processing over 200,000 monthly trip and payout records."
+    },
+    "details": {
+      "es": [
+        "Microservicios con Node.js, Kubernetes y Docker; frontend con React y datos en MongoDB.",
+        "Integración con APIs de Uber y herramientas de reportes para reemplazar procesos manuales."
+      ],
+      "en": [
+        "Microservices with Node.js, Kubernetes and Docker; React frontend and MongoDB data storage.",
+        "Integrated Uber APIs and reporting tools to replace manual workflows."
+      ]
+    }
+  },
+  {
+    "id": "uber-2024",
+    "company": "Uber",
+    "role": "Software Engineer Intern",
+    "dates": {
+      "es": "jun–sep 2024",
+      "en": "Jun–Sep 2024"
+    },
+    "location": "San Francisco, CA",
+    "photo": null,
+    "summary": {
+      "es": "Desarrollo de una lista dinámica y personalizada de tareas para guiar la incorporación de nuevos conductores, con servicios en Go e interfaz integrada.",
+      "en": "Developed a dynamic, personalized checklist to guide new driver onboarding, with Go services and an integrated UI."
+    },
+    "details": {
+      "es": [
+        "Servicios backend en Go, migraciones de base de datos y generación dinámica de tareas.",
+        "Interfaz con actualizaciones mediante eventos y pruebas unitarias y de integración."
+      ],
+      "en": [
+        "Go backend services, database migrations and dynamic checklist generation.",
+        "Event-driven UI updates, with unit and integration tests."
+      ]
+    }
+  },
+  {
+    "id": "arizona",
+    "company": "University of Arizona",
+    "role": "Research Assistant",
+    "dates": {
+      "es": "feb–may 2024",
+      "en": "Feb–May 2024"
+    },
+    "location": "Remote",
+    "photo": null,
+    "summary": {
+      "es": "Desarrollo de scrapers para recopilar más de 1.5 GB de noticias políticas latinoamericanas en texto plano, destinadas al modelo de IA ConfliBERT.",
+      "en": "Built scrapers to collect over 1.5 GB of Latin American political news in plain text for the ConfliBERT AI model."
+    },
+    "details": {
+      "es": [
+        "Automatización de navegación y extracción de datos con Python, Selenium y Beautiful Soup.",
+        "Colaboración con el equipo de investigación para identificar fuentes y diseñar estrategias de recopilación."
+      ],
+      "en": [
+        "Automated browsing and data extraction with Python, Selenium and Beautiful Soup.",
+        "Collaborated with researchers to identify sources and design data collection strategies."
+      ]
+    }
+  },
+  {
+    "id": "telcops",
+    "company": "TELCOPS",
+    "role": "Mobile Developer Intern",
+    "dates": {
+      "es": "dic 2023–jun 2024",
+      "en": "Dec 2023–Jun 2024"
+    },
+    "location": "Remote",
+    "photo": null,
+    "summary": {
+      "es": "Desarrollo de aplicaciones Android con Kotlin y Jetpack para mejorar procesos de gestión de activos.",
+      "en": "Developed Android applications with Kotlin and Jetpack to improve asset management processes."
+    },
+    "details": {
+      "es": [
+        "Desarrollo con Kotlin, Android Studio y Android Jetpack.",
+        "Colaboración en un equipo ágil con Scrum."
+      ],
+      "en": [
+        "Built applications using Kotlin, Android Studio and Android Jetpack.",
+        "Collaborated in an agile team using Scrum."
+      ]
+    }
+  }
+]

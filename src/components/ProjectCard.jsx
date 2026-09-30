@@ -1,58 +1,36 @@
-import React, { useContext, useState } from 'react'
-import { DataContext } from '../context/DataProvider';
+import { useContext } from 'react'
+import { FiArrowUpRight } from 'react-icons/fi'
+import { DataContext } from '../context/DataProvider'
 
 export const ProjectCard = (project) => {
-    const { project_check } = useContext(DataContext);
-    const {name, description, bullets, technologies, url, images} = project;
+  const { project_check, project_labels } = useContext(DataContext)
+  const { name, description, bullets, technologies, url, images } = project
 
-    const [isActive, setIsActive] = useState(false);
-    
-    const toggleCard = () => {
-        setIsActive(!isActive);
-    };
-
-    return (
-        <article
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000"
-            className={`projects__card ${isActive ? 'active' : ''}`}
-            onClick={toggleCard} >
-            
-            {isActive && (
-                <div className="overlay">
-                    <div className="content">
-                        <a href={url} target='__blank'>
-                        <img
-                            className='light'
-                            src='assets/github.png'
-                            alt='Github repository' />
-                        </a>
-                        <img src='assets/cerca.png' className='overlay__content-close'/>
-                    </div>    
-                </div>  
-            )}
-
-            <div className='card__header'>
-                <img src={ images } />
-                <h5 className='card__header-title'>{ name }</h5>
-            </div>
-            <div className='card__content'>
-                <p className='card__content-description'>{ description }</p>
-                <div>
-                    <h5>Technologies:</h5>
-                    <ul className='card__content__tech'>
-                        {
-                            technologies.map(techology => (
-                                <li className='card__content__tech-item'
-                                    key={techology}>
-                                    { techology }
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
-            </div>        
-        </article>
-    )
+  return (
+    <article className="project-tile">
+      <img
+        className="project-cover"
+        src={`${import.meta.env.BASE_URL}${images}`}
+        alt={project_labels.photo_alt.replace('{name}', name)}
+        loading="lazy"
+      />
+      <div className="project-info">
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <ul className="technology-tags" aria-label={project_labels.technologies}>
+          {technologies.map(technology => <li key={technology}>{technology}</li>)}
+        </ul>
+        {bullets?.length > 0 && (
+          <details className="project-details">
+            <summary>{project_labels.contribution}</summary>
+            <ul>{bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>
+          </details>
+        )}
+        <a className="project-code" href={url} target="_blank" rel="noreferrer">
+          {project_check}<span className="sr-only">: {name}</span>
+          <FiArrowUpRight aria-hidden="true" />
+        </a>
+      </div>
+    </article>
+  )
 }
